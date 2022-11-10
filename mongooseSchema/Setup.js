@@ -7,4 +7,4 @@ const setupSchema = new Schema({
     Baseline: Array
 })
 
-module.exports = model('channel-ids-indev', setupSchema, 'channel-ids-indev')
+module.exports = model('channel-ids', setupSchema, 'channel-ids')
