@@ -99,8 +99,6 @@ client.on("ready", async () => {
             })
             await sleep(5000)
         }
-        console.log("Ending scheduled task")
-        console.log("--------------------------------------------------------------------------")
     })
 
     console.log(chalk.blue("Validating cron...\n"))
