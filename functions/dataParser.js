@@ -53,10 +53,14 @@ async function dataParser(account_id, requestOptions, numFollowers, screen_name,
         count++
     } while (nextToken !== undefined && nextToken !== 0)
 
-    //add followers to an array
-    for (var i = 0; i < numFollowers; i++) {
-        follower_array.push(data[i].username)
+    if (numFollowers > 0) {
+        console.log(data[i].username)
+        //add followers to an array
+        for (var i = 0; i < numFollowers; i++) {
+            follower_array.push(data[i].username)
+        }
     }
+
 
     // var lostFollowers = ""
     var gainedFollowers = ""
