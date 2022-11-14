@@ -66,6 +66,7 @@ client.on("ready", async () => {
     var task = cron.schedule(cron_value, async () => {
         //execute this code for every guild that has run /set-up
         console.log("Beginning scheduled task..")
+        console.log("--------------------------------------------------------------------------")
         for (var j = 0; j < guild_ids.length; j++) {
             const guildId = guild_ids[j]
             //find database via guildId
@@ -98,6 +99,8 @@ client.on("ready", async () => {
             })
             await sleep(5000)
         }
+        console.log("Ending scheduled task")
+        console.log("--------------------------------------------------------------------------")
     })
 
     console.log(chalk.blue("Validating cron...\n"))
