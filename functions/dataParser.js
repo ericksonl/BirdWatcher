@@ -54,7 +54,10 @@ async function dataParser(account_id, requestOptions, numFollowers, screen_name,
     } while (nextToken !== undefined && nextToken !== 0)
 
     if (numFollowers > 0) {
-        console.log(data)
+        console.log(chalk.red("Errors occuring here"))
+        console.log("--------------------------------------------------------------")
+        console.log(data[0])
+        console.log("--------------------------------------------------------------")
         //add followers to an array
         for (var i = 0; i < numFollowers; i++) {
             follower_array.push(data[i].username)
