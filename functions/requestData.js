@@ -37,7 +37,7 @@ async function requestData(channel, screen_name, baseline, guildId) {
         //if follower count is over 15k, itll take more more than 15 minutes to compile, so we dont let that happen (yet)
         if (numFollowers < 10000) {
             try {
-                return await dataParser(accountId, requestOptions, numFollowers, screen_name, channel, baseline, guildId)
+                return await dataParser(accountId, requestOptions, screen_name, channel, baseline, guildId)
             } catch (e) {
                 console.log(e)
                 channel.send({ content: "You are being rate limited by twitter! Try again in 15 minutes!"})
