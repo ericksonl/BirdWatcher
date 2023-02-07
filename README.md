@@ -2,6 +2,10 @@
 
 BirdWatcher is a Discord bot that will track the new followers of a Twitter user. This bot is fully customizable, allowing you to track anyone with under 10,000 followers. Updates are sent out daily at 6am, 10am, and 2pm (your machine's local timezone).
 
+## Important Info:
+
+On February 9th, 2023 Twitter will begin charging users to use their API. This will make this bot unusable without paying for Twitter's API.
+
 ## 📝 Commands
 
 > Note: BirdWatcher uses Discord slash commands
