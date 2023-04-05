@@ -13,21 +13,28 @@ module.exports = {
 
         var descriptionStr = ""
 
-        setupSchema.find({ Guild: guildID }, async (err, data) => {
-            if (data) {
-                for (var i = 0; i < data.length; i++) {
-                    descriptionStr += "\@" + data[i].UserName + "\n"
+        try {
+            setupSchema.find({ Guild: guildID }, async (err, data) => {
+                #DEBUG:
+                if (!data) {
+                    await interaction.reply({ content: "No users currently being Bird-Watched!\nUse `/add` to Bird-Watch someone" })
+                } else {
+                    for (var i = 0; i < data.length; i++) {
+                        descriptionStr += "\@" + data[i].UserName + "\n"
+                    }
+
+                    console.log("foo")
+                    const trackedEmbed = new EmbedBuilder()
+                        .setColor(0x7289DA)
+                        .setTitle("Tracked Users")
+                        .setDescription(descriptionStr)
+
+                    await interaction.reply({ embeds: [trackedEmbed] })
                 }
-
-                const trackedEmbed = new EmbedBuilder()
-                    .setColor(0x7289DA)
-                    .setTitle("Tracked Users")
-                    .setDescription(descriptionStr)
-
-                await interaction.reply({ embeds: [trackedEmbed] })
-            } else {
-                await interaction.reply({ content: "No users currently being Bird-Watched!\nUse `/add` to Bird-Watch someone" })
-            }
-        })
+                #DEBUG:
+            })
+        } catch (error) {
+            console.log(error)
+        }
     }
 }
