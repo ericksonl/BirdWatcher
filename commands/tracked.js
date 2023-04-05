@@ -15,7 +15,7 @@ module.exports = {
 
         try {
             setupSchema.find({ Guild: guildID }, async (err, data) => {
-                #DEBUG:
+                // #DEBUG:
                 if (!data) {
                     await interaction.reply({ content: "No users currently being Bird-Watched!\nUse `/add` to Bird-Watch someone" })
                 } else {
@@ -31,7 +31,7 @@ module.exports = {
 
                     await interaction.reply({ embeds: [trackedEmbed] })
                 }
-                #DEBUG:
+                // #DEBUG:
             })
         } catch (error) {
             console.log(error)
