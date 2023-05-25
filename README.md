@@ -5,6 +5,7 @@ BirdWatcher is a Discord bot that will track the new followers of a Twitter user
 ## Important Info:
 
 On February 9th, 2023 Twitter will begin charging users to use their API. This will make this bot unusable without paying for Twitter's API.
+Basic Tier access is available, but this has made the BirdWatcher un-scaleable. See more info on the [Twitter API Documentation](https://developer.twitter.com/en/docs/twitter-api)
 
 ## 📝 Commands
 
@@ -77,4 +78,4 @@ For additional help and info on cron values see their [official website](https:/
 
 ## ❗ Important Info
 
-* Twitter has a rate limit of 15 requests per 15 minutes, and will return a max of 1000 followers per each request. This means you will be unable to track a user who has more than 15,000 followers. As a safegaurd, I capped BirdWatcher at 10,000.
+* ~~Twitter has a rate limit of 15 requests per 15 minutes, and will return a max of 1000 followers per each request. This means you will be unable to track a user who has more than 15,000 followers. As a safegaurd, I capped BirdWatcher at 10,000.~~ As stated above, Twitter now has paid tiers. BirdWatcher requires AT LEAST a "Basic Tier," costing a whopping 100$ a month. This tier has a rate limit of 100 requests per 24 hours per user, and 500 requests per 24 hours per app. Each request will return a max of 1000 followers per each request. 
