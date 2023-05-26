@@ -31,8 +31,8 @@ Basic Tier access is available, but this has made the BirdWatcher un-scaleable. 
 Before running this on your local machine, you will need to do the following:
 
 * Download and set up Node.js
-* Create a new project in the [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard). Save the `Bearer token`. A guide to do this can be found [here](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
-* Create a new application in the [Discord Developer Portal](https://discord.com/developers/applications). Save the `Token` and `Client ID Token`. A guide to do this can be found [here](https://developer.twitter.com/en/docs/projects/overview#:~:text=To%20create%20a%20Project%2C%20click,%2C%20description%2C%20and%20use%20case.)
+* Create a new project in the [Twitter Developer Portal](https://developer.twitter.com/en/portal/dashboard). Save the `Bearer token`. A guide to do this can be found [here](https://developer.twitter.com/en/docs/projects/overview#:~:text=To%20create%20a%20Project%2C%20click,%2C%20description%2C%20and%20use%20case.)
+* Create a new application in the [Discord Developer Portal](https://discord.com/developers/applications). Save the `Token` and `Client ID Token`. A guide to do this can be found [here](https://discordjs.guide/preparations/setting-up-a-bot-application.html#creating-your-bot)
 * Create a new project in [MongoDB](https://cloud.mongodb.com/). Save the `Connection String`. A guide to do this can be found [here](https://www.mongodb.com/docs/cloud-manager/tutorial/manage-projects/)
 
 After you have the necessary requirements, run the following commands:
